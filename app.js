@@ -1,3 +1,10 @@
+/*
+File Name: app.css
+Student's Name: Anuben Keshavala
+StudentID: 301120629
+Date: October 5, 2020
+*/
+
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
@@ -22,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use( '/public/images', express.static('./public/images') ) ;
+app.use('/public/PDF', express.static('./public/PDF'));
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

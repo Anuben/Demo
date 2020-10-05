@@ -4,7 +4,6 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
-  res.render('index' , {title:'My name is ANu'});
 });
 
 /* GET home page. */
@@ -31,6 +30,7 @@ router.get('/services', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('index',  { title: 'Contact', });
 });
+
 
 
 module.exports = router;
