@@ -6,81 +6,19 @@
   <div class="jumbotron">
     <% switch (title) {
       case'Home' : %>
-      <h2 >Mission Statement:</h2>
-        <p>My mission is to deliver the best possible reliable software solutions to help the communities to improve IT efficiency and business profitability.</p>
-        <h2>Favourite Quote:</h2>
-        <p>" You may never know what results come of your actions, but if you do nothing, there will be no results. " ~ Mahatma Gandhi</p>
-      <% break;
+      <%- include partials/home.ejs %>
+        <% break;
       case 'About' : %>
-      <p></p>
-      <h1 class="center">About Me</h1>
-      <h2>Introduction:</h2>
-      <p>
-      My name is AnubenKeshavala. You can call me Anu. I completed my bachelor in commerce at Saurastra University, India. Now, i am a student of the Software Engineering Technology Program at Centennial College. This is my Third Semester.</p>
-      <h6><a href="public/PDF/Resume.pdf"><font color="Steelblue"><b>Link for the Resume</b></font></a></h6>
-        
-      <p></p>
-        <img src="public/images/Anila.png" alt="Image" width="300" height="280">
-
+      <%- include partials/about.ejs %>
         <% break;
         case 'Products' : %>
-       
-        <h2>Project1- Real Estate Services</h2> 
-        <p>In this part of the project, my aim is to provide the detail information of the project that i have completed. In this page, i am going to provide the projects that i have completed. Thes projects are fully completed by me. So, here, i am going to provide the link of the projects and the tasks that i completed.</p>
-        <img src="public/images/Project1.png" class="left" alt="Project 1" width="1000" height="450">
-        <p></p><p></p>
-        <h2>Project2- Spiner</h2> 
-        <p>I made the Spinner Machine in my 2 semester as a part of my assignment. I used TypeScript and JavaScript to implement the functionality of the game. </p>
-        <img src="public/images/Game.png" class="left" alt="Project 2" width="1000" height="450"> 
-        <p></p>
-        <h2>Project3:</h2> 
-        <p>I also made the dice roller using the javascript in my course COMP125-Web application development. As you can see when you press the roll button you can roll the two different dices and it will give the result that what you got. </p> 
-        <img src="public/images/Diceroller.png" class="left" alt="Project 3" width="1000" height="450">
+        <%- include partials/products.ejs %>
         <% break;       
       case 'Services' : %>
-      <h2> Services:</h2>
-      <p>WE provide the services like UNIX-LINUX, Coding and Database this all are the major services.</p>
-
-      <div class="row"> 
-      <div class="column">
-      <img src="public/images/unix-linux.jpg" alt="database " style="width:100%">
-      </div>
-      <div class="column">
-      <img src="public/images/Coding.jpeg" alt="coding" style="width:100%">
-      </div>
-      <div class="column">
-      <img src="public/images/Database.jpg" alt="unix-linux" style="width:100%">
-      </div>
-      </div>
+      <%- include partials/services.ejs %>
         <% break;    
       case 'Contact' : %>
-      <form>
-       
-      <div class="form-group">
-        <label for="exampleInputFirstName">FirstName</label>
-        <input type="firstname" class="form-control" id="exampleInputFirstName">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputLastName">LastName</label>
-        <input type="lastname" class="form-control" id="exampleInputLastName">
-      </div>
-      <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputContactNumber">ContactNumber</label>
-        <input type="contactnumber" class="form-control" id="exampleInputContactNumber">
-      </div>
-      <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-      <a href="/home"><button type="button" value="submit" class="btn btn-primary"><i class="far fa-paper-plane"></i>Submit</button></a>
-       <button type="reset" class="btn btn-warning "><i class="fas fa-comment-slash"></i> Reset</button>
-      
-    </form>
+      <%- include partials/contact.ejs %>
       <% break;
       } %>
     <hr class="my-4">
@@ -90,6 +28,6 @@
 
 
 
-
+<!--Bottom Nav Footer-->
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs%>
