@@ -1,5 +1,5 @@
 /*
-File Name: app.css
+File Name: app.js
 Student's Name: Anuben Keshavala
 StudentID: 301120629
 Date: October 5, 2020
